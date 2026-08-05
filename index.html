@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#FF8FAB" />
+  <title>仙女AI提示词库</title>
+  <link rel="stylesheet" href="styles.css?v=175" />
+</head>
+<body>
+  <div id="app">
+    <!-- 桌面侧边栏 -->
+    <aside id="sidebar" class="sidebar">
+      <div class="brand">
+        <span id="brand-emoji" class="brand-ico"></span>
+        <span class="brand-name">AI轻松学</span>
+      </div>
+      <div class="side-search">
+        <input id="side-search-input" type="search" placeholder="🔍 搜索提示词…" />
+      </div>
+      <nav id="side-nav" class="side-nav"></nav>
+      <div class="side-footer">
+        <span id="side-version">v1.7.5</span>
+        <span class="side-dot">·</span>
+        <span>本地存储</span>
+      </div>
+    </aside>
+
+    <!-- 主区域 -->
+    <div class="main">
+      <header id="topbar" class="topbar">
+        <button id="menu-btn" class="icon-btn mobile-only" aria-label="菜单">☰</button>
+        <h1 id="page-title" class="page-title">工作台</h1>
+        <div class="topbar-actions">
+          <button id="top-search" class="icon-btn" aria-label="搜索">🔍</button>
+          <button id="top-new" class="btn-primary">＋ 新建</button>
+        </div>
+      </header>
+      <main id="view" class="view">
+        <div class="loading-state" id="global-loading">
+          <div class="spinner"></div>
+          <p>正在加载你的提示词库…</p>
+        </div>
+      </main>
+    </div>
+
+    <!-- 手机底部导航（5 入口等分） -->
+    <nav id="bottom-nav" class="bottom-nav"></nav>
+  </div>
+
+  <!-- 抽屉 / 弹窗 -->
+  <div id="overlay" class="overlay hidden"></div>
+  <div id="sheet" class="sheet hidden"></div>
+
+  <!-- 移动端侧边栏抽屉 -->
+  <div id="drawer-overlay" class="drawer-overlay hidden"></div>
+
+  <!-- 轻提示 -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="seed.js?v=175"></script>
+  <script src="app.js?v=175"></script>
+</body>
+</html>

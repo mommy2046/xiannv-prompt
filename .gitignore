@@ -1,0 +1,19 @@
+# 环境/沙箱
+.workbuddy/
+
+# 非站点资源（未被前端引用，且体积大）
+contact_sheets/
+doc1.md
+fetch_err.txt
+overview.md
+.repo_payload.json
+
+# 仅上传 78-88 原图；1-77 使用缩略图（effect_thumb/）
+effect/0[0-9].png
+effect/1[0-9].png
+effect/2[0-9].png
+effect/3[0-9].png
+effect/4[0-9].png
+effect/5[0-9].png
+effect/6[0-9].png
+effect/7[0-7].png
