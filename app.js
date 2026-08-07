@@ -1062,6 +1062,7 @@ function bindGlobal() {
       case 'soft-delete': softDelete(el.getAttribute('data-id')); break;
       case 'pick-insp-img': document.getElementById('insp-img').click(); break;
       case 'del-insp-img': inspEditor.image = null; renderInspImgPreview(); break;
+      case 'save-insp': saveInspiration(); break;
     }
   };
   document.getElementById('sheet').onchange = (e) => {
